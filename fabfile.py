@@ -7,13 +7,13 @@ from fabric.contrib import *
 
 """ These are settings specific to this site
 """
-PRODUCTION_HOST='ec2-54-206-0-2.ap-southeast-2.compute.amazonaws.com'
+PRODUCTION_HOST='somehost'
 
 web_docs_dir = '/var/www'
-release_dir = web_docs_dir + '/releases/kgm-web'
-site_name = 'kgm-web'
+release_dir = web_docs_dir + '/releases/sitename'
+site_name = 'sitename'
 
-project_name = 'kgm-web'
+project_name = 'sitename'
 sitedir = web_docs_dir + '/' + site_name
 webroot_mode = '775'
 webroot_var_mode = '775'
