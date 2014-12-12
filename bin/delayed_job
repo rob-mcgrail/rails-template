@@ -3,3 +3,25 @@
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'config', 'environment'))
 require 'delayed/command'
 Delayed::Command.new(ARGV).daemonize
+
+# Call .delay.method(params) on any object and it will be processed in the background.
+
+# # without delayed_job
+# @user.activate!(@device)
+
+# # with delayed_job
+# @user.delay.activate!(@device)
+# If a method should always be run in the background, you can call #handle_asynchronously after the method declaration:
+
+# class Device
+#   def deliver
+#     # long running method
+#   end
+#   handle_asynchronously :deliver
+# end
+
+# device = Device.new
+# device.deliver
+
+# You can invoke rake jobs:clear to delete all jobs in the queue.
+

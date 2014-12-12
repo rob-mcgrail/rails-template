@@ -18,3 +18,10 @@ Don't start the app with `$ rails s`, it has a clock and worker thread. Start it
 
 `$ foreman start`
 
+Also:
+
+`$ bundle exec rake assets:precompile`
+
+`$ bundle exec rake tmp:cache:clear`
+
+`$ foreman export --app appname --user root upstart /etc/init`
