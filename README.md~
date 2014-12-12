@@ -1,0 +1,48 @@
+Getting a dev version running:
+
+`$ gem install bundler foreman rake`
+
+`$ bundle`
+
+`$ cp env .env`
+
+Edit the .env file as required for your environment. Database details are only required if you're using the production environment.
+
+`$ rake db:migrate`
+
+`$ rake spec`
+
+Hopefully everything is green.
+
+Don't start the app with `$ rails s`, it has a clock and worker thread. Start it via:
+
+`$ foreman start`
+
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.

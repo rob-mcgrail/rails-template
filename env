@@ -1,0 +1,13 @@
+# Rename this file to .env, and adjust settings as required.
+
+ENVIRONMENT=development
+
+PORT=3000
+DB_NAME=
+DB_USER=
+DB_PASS=
+DB_POOL=
+DB_TIMEOUT=
+PUMA_WORKERS=6
+MIN_THREADS=1
+MAX_THREADS=8
