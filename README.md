@@ -10,15 +10,17 @@ Edit the .env file as required for your environment. Database details are only r
 
 `$ rake db:migrate`
 
+Once you have tests (./spec) you can run these like:
+
 `$ rspec`
 
-Hopefully everything is green.
+Hopefully everything will be green.
 
 Don't start the app with `$ rails s`, it has a clock and worker thread. Start it via:
 
 `$ foreman start`
 
-Also:
+Also of note (but unecessary in development mode):
 
 `$ bundle exec rake assets:precompile`
 
