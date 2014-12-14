@@ -27,3 +27,5 @@ Also of note (but unecessary in development mode):
 `$ bundle exec rake tmp:cache:clear`
 
 `$ foreman export --app appname --user root upstart /etc/init`
+
+Cronjobs can be added via the clockwork gem, in ./libs/clock.rb
