@@ -26,11 +26,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
 
 # Server
 gem 'puma'
-
 gem 'foreman'
 
 # API
@@ -38,6 +36,7 @@ gem 'rocket_pants'
 
 #async
 gem 'delayed_job_active_record'
+gem 'clockwork'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -54,8 +53,12 @@ gem 'delayed_job_active_record'
 group :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
-  gem "capybara"
-  gem "database_cleaner"
+  gem 'capybara'
+  gem 'database_cleaner'
   gem 'shoulda'
   gem 'faker'
+end
+
+group :development do
+  gem 'spring'
 end
