@@ -1,0 +1,23 @@
+<% content_for :head do %>
+  <title>Home</title>
+<% end %>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>Hi!</h1>
+    <hr/>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+
+    <p>Example of Bootstrap friendly forms: <a href="https://github.com/plataformatec/simple_form">https://github.com/plataformatec/simple_form</a>:</p>
+
+    <%= simple_form_for @object, url: '/hello', as: 'user_basic' do |f| %>
+      <%= f.input :username %>
+      <%= f.input :password %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
