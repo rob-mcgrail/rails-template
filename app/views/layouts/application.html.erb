@@ -23,8 +23,12 @@
 
 
     <div class="container">
-      <%= render partial: "shared/flash_messages", flash: flash %>
+      <div id="flash_messages_container">
+        <%= render partial: "shared/flash_messages", flash: flash %>
+      </div>
+
       <%= yield %>
+
     </div> <!-- /container -->
 
     <!-- Javascripts
