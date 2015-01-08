@@ -11,10 +11,7 @@ default: &default
 
 development:
   <<: *default
-  adapter: <%= ENV['DB_NAME'].empty? ? 'sqlite3' : 'mysql2' %>
-  database: <%= ENV['DB_NAME'].empty? ? 'db/development.sqlite3' : ENV['DB_NAME'] %>
-  username: <%= ENV['DB_USER'] %>
-  password: <%= ENV['DB_PASS'] %>
+  database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
