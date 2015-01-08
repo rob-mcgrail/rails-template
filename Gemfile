@@ -51,9 +51,6 @@ gem 'clockwork'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem "rocket_tag"
-
-
 group :development do
   gem 'better_errors', '<= 1.1'
   gem 'binding_of_caller'
