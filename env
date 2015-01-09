@@ -2,6 +2,8 @@
 
 ENVIRONMENT=development
 
+SECRET_KEY_BASE=put something in me for production
+
 PORT=3000
 DB_NAME=
 DB_USER=
