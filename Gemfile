@@ -48,6 +48,9 @@ gem 'rocket_pants'
 gem 'delayed_job_active_record'
 gem 'clockwork'
 
+# Auth
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
