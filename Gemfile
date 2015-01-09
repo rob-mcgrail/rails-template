@@ -51,6 +51,9 @@ gem 'clockwork'
 # Auth
 gem 'devise'
 
+# Basic admin
+gem 'rails_admin'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
