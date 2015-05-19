@@ -1,16 +1,17 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 require 'faker'
 
-# FactoryGirl.define do
-#   # Define a basic devise user.
-#   pass = Faker::Internet.password
+FactoryGirl.define do
+  # Define a basic devise user.
+  pass = Faker::Internet.password
 
-#   factory :user do
-#     email { Faker::Internet.email }
-#     password pass
-#     password_confirmation pass
-#   end
-# end
+  factory :user do
+    email { Faker::Internet.email }
+    name { Faker::Internet.user_name }
+    password pass
+    password_confirmation pass
+  end
+end
 
 
 # Example from inside a spec...

@@ -13,6 +13,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
+  config.serve_static_files = true
   config.quiet_assets = true
 
   # Don't care if the mailer can't send.
