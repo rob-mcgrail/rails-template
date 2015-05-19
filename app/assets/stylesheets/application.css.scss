@@ -14,21 +14,9 @@
  *= require_self
  */
 
-// Example using 'Cerulean' bootswatch
-//
-// First import cerulean variables
-@import "bootswatch/darkly/variables";
-
-// Then bootstrap itself
-@import "bootstrap-sprockets";
-@import "bootstrap";
 @import "font-awesome";
 
-// Bootstrap body padding for fixed navbar
-body { padding-top: 80px; }
-
-// And finally bootswatch style itself
-@import "bootswatch/darkly/bootswatch";
+body { padding: 30px; }
 
 // Whatever application styles you have go last
 // @import "base";
