@@ -1,5 +1,5 @@
 $(function() {
-  $('.alert.close').on('click', function(e) {
+  $('.flash-messages .close').on('click', function(e) {
     $(this).parent().hide();
   });
 
@@ -8,7 +8,7 @@ $(function() {
     if (msg) {
       $.get( "/flash", function( data ) {
         $('#flash_messages_container').prepend(data);
-        $('.alert.close').on('click', function(e) {
+        $('.flash-messages .close').on('click', function(e) {
           $(this).parent().hide();
         });
       });
