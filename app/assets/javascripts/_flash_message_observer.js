@@ -7,7 +7,7 @@ $(function() {
     var msg = request.getResponseHeader('X-Message-Present');
     if (msg) {
       $.get( "/flash", function( data ) {
-        $('#flash_messages_container').prepend(data);
+        $('.flash-messages').prepend(data);
         $('.flash-messages .close').on('click', function(e) {
           $(this).parent().hide();
         });
